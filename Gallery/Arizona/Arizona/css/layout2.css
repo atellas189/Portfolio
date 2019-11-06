@@ -1,0 +1,112 @@
+
+html{
+    background-image: url(https://i.pinimg.com/originals/20/7a/d1/207ad1298302c6a33367f936a9e0ad86.jpg)
+}
+*{
+    zoom: 105%;
+}
+.grid-container{
+    display: grid;
+    grid-gap: 8px;
+    background-color: aqua;
+    grid-template-columns: 10%, 1fr, 1fr, 1fr, 1fr, 10%;
+    grid-template-rows: 10%, 20%, 20%, 20%, 20%, 10%;
+    background-color: cyan;
+    color: white;
+    transition: 4s;
+}
+.logo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: left;
+}
+@font-face{
+    font-family: 'Teko';
+    src: url('fonts/Teko.ttf');
+}
+nav{
+    z-index: 1;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    opacity: 30%;
+    font-size: 225%;
+    width: 100%;    
+    padding-top: 10px;
+    padding-right: 10px;
+    font-family: 'Teko';
+}
+nav > a{
+    color: white;
+    background-image: url(https://i.pinimg.com/originals/20/7a/d1/207ad1298302c6a33367f936a9e0ad86.jpg);
+    box-shadow: 5px 5px 10px rgb(127, 122, 192);
+
+}
+nav a:visited{
+    color:white;
+}
+nav a:hover{
+    font-size: 105%;
+}
+.picture{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: auto;
+}
+@font-face{
+    font-family: 'Cinzel';
+    src: url('fonts/Cinzel.ttf');
+}
+p{
+    font-size:125%;
+}
+h1{
+    font-family: 'Cinzel';
+}
+.item-1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    border-top: white 4px solid;
+    border-right: white 4px solid;
+    border-left: white 4px solid;
+    background-color: darkcyan;
+}
+.item-2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-top: white 4px solid;
+    border-right: white 4px solid;
+    border-left: white 4px solid;
+    background-color: darkcyan;
+}
+.item-2 > p{
+    padding-top: 12px;  
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+}
+.item-3{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-top: white 4px solid;
+    border-right: white 4px solid;
+    border-left: white 4px solid;
+    background-color: darkcyan;
+}
+.item-3 > p{
+    padding-top: 12px;  
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+}
