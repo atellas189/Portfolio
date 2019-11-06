@@ -1,3 +1,62 @@
-html{
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    html{
     background-color: blue;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    html{
+        background-color: yellow;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    html{
+        background-color: whitesmoke;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+        grid-template-rows: 33%, 33%, 33%;
+        background-color: blue;
+        grid-gap: 10px;
+    }
+    .main{
+        border: black 4px solid;
+        background-color: red;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .aside{
+        border: black 4px solid;
+        background-color: firebrick;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .item-1{
+        border: black 4px solid;
+        background-color: purple;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .item-2{
+        border: black 4px solid;
+        background-color: yellow;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
 }
