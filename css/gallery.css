@@ -1,0 +1,11 @@
+html{
+    background: linear-gradient(90deg,yellow, orange, orangered, red, pink,
+     rebeccapurple, purple, blue, turquoise, lime, yellowgreen,yellow);
+     width: 5000px;
+    transition: 5s;
+}
+
+html:hover{
+    transition: 10s;
+    transform: translate(975px, 0px);
+}
