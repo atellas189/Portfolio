@@ -48,6 +48,7 @@
         animation-name: logo;
         animation-duration: 10s;
         animation-iteration-count:infinite;
+        animation-timing-function: linear;
     }
     @-webkit-keyframes logo{
         0%   {left: 0px;}
@@ -94,6 +95,9 @@
         grid-row-start: 1;
         grid-row-end: 4;
     }
+    .aside h1{
+        text-align: center;
+    }
     .aside img{
         width: 300px;
         height: 300px;
@@ -117,18 +121,45 @@
         grid-row-start: 2;
         grid-row-end: 4;
     }
-    footer{
-        background-color: rgb(190, 242, 255) ;
-    }
-    footer p{
-        text-align: center;
-        font-size: 150%;
-    }
 
     /* Animation code */
 
-    .ocean{
-        width: 100%;
+    
+    
+    .ocean{ 
+        height: 5%;
+        width:100%;
+        position:absolute;
+        bottom:0;
+        left:0;
+        background: rgb(rgb(1, 88, 113));
+        top: 1105px;
+      }
+    .wave{
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg);
+        background-repeat: repeat-x; 
+        position: absolute;
+        top: -198px;
+        width: 3400px;
+        height: 198px;
+        animation: wave 7.5s cubic-bezier( 0.78, 0.21, 0.60, 0.53) infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes wave {
+        0% {margin-left: 0;}
+        
+        100% {margin-left: -1600px;}
     }
 
+    .wave:nth-of-type(2) {
+        top: -170px;
+        opacity: 1;
+        animation-name: splash;
+        animation-duration: 6s;
+    }
+    @keyframes splash {
+        0%, 100% {transform: translate3d(0,-25px,0);}
+        
+        50% {transform: translate3d(0,5px,0);}
+    
 }
