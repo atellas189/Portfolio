@@ -13,20 +13,38 @@ body:hover{
     transition: 20s;
 }
 .coding{
+    background-image: url(https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2015/03/coding-1024x836.jpg);
     border: 4px solid black;
     width: 200px;
     height: 215px;
     margin-top: 90px;
     margin-left: 100px;
+    font-family: 'Bold';
+    color: white;
+}
+.coding img{
+    width: 200px;
+    height: 215px;
+}
+@font-face{
+    font-family: 'Bold';
+    src: url('/fonts/Bold.ttf');
 }
 .coding h1{
-    text-shadow: 1px 1px 0px red;
+    font-size: 200%;
+    text-shadow: 5px 5px 0px red;
+    font-family: 'Bold';
 }
-
 .arizona{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arizona.svg);
     border: 4px solid black;
     width: 200px;
     height: 215px;
-    margin-top: 90px;
-    margin-left: 800px;
+    margin-top: 190px;
+    margin-left: 1300px;
+    color: white;
+}
+.arizona img{
+    width: 200px;
+    height: 215px;
 }
