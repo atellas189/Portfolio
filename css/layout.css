@@ -132,7 +132,7 @@
         position:absolute;
         bottom:0;
         left:0;
-        background: rgb(rgb(1, 88, 113));
+        background:rgb(1, 88, 113);
         top: 1105px;
       }
     .wave{
@@ -142,8 +142,9 @@
         top: -198px;
         width: 3400px;
         height: 198px;
-        animation: wave 7.5s cubic-bezier( 0.78, 0.21, 0.60, 0.53) infinite;
+        animation: wave 7.5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
         animation-timing-function: linear;
+        transform: translate3d(0, 0, 0);
     }
     @keyframes wave {
         0% {margin-left: 0;}
@@ -154,12 +155,11 @@
     .wave:nth-of-type(2) {
         top: -170px;
         opacity: 1;
-        animation-name: splash;
-        animation-duration: 6s;
+        animation: splash 7s ease -1.30s infinite;
     }
     @keyframes splash {
         0%, 100% {transform: translate3d(0,-25px,0);}
         
         50% {transform: translate3d(0,5px,0);}
-    
+    }
 }
