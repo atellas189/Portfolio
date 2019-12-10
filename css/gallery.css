@@ -1,3 +1,7 @@
+@font-face{
+    font-family: 'Normal';
+    src: url(../fonts/Rubik-Regular.ttf);
+}
 html{
     overflow-x: hidden;
 }
@@ -13,36 +17,37 @@ body:hover{
     transition: 20s;
 }
 .coding{
-    background-image: url(https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2015/03/coding-1024x836.jpg);
-    border: 4px solid black;
-    width: 200px;
-    height: 215px;
-    margin-top: 50px;
+    position: relative;
+    background-image: url('../Images/fishy.png');
+    background-size: cover;
+    width: 400px;
+    height: 225px;
+    margin-top: 75px;
     margin-left: 100px;
-    font-family: 'Bold';
     color: white;
 }
 .coding img{
     width: 200px;
     height: 215px;
 }
-@font-face{
-    font-family: 'Bold';
-    src: url('/fonts/Bold.ttf');
-}
 .coding h1{
-    font-size: 200%;
-    text-shadow: 5px 5px 0px red;
-    font-family: 'Bold';
+    font-size: 250%;
+    text-shadow: 4px 4px 0px blue;
     text-align: center;
+    position: absolute;
+    top: 24%;
+    left: 34%;
+    margin-right: -50%;
+    font-family: 'Normal';
 }
 .arizona{
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arizona.svg);
-    border: 4px solid black;
-    width: 200px;
-    height: 215px;
-    margin-top: 50px;
-    margin-left: 1000px;
+    position: relative;
+    background-image: url('../Images/fishy-2.png');
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+    margin-top: -275px;
+    margin-left: 800px;
     color: white;
 }
 .arizona img{
@@ -50,7 +55,14 @@ body:hover{
     height: 215px;
 }
 .arizona h1{
+    font-size: 250%;
     text-align: center;
+    position: absolute;
+    top: 24%;
+    left: 34%;
+    margin-right: -50%;
+    font-family: 'Normal';
+    text-shadow: 4px 4px 0px blue;
 }
 .home{
     top: -100px;
@@ -59,7 +71,16 @@ body:hover{
     margin-right: auto;
 }
 .home a img{
-    height: 255px;
-    width:275px;
-    margin-top: 46px;
+    height: 382.5px;
+    width:412.5px;
+    margin-top: -200spx;
+    transform: translateY(236px);
+
+}
+.sand{
+    width: 200%;
+    transform: translateX(-300px) translateY(220px);
+    height: 50px;
+    top: 0;
+    background: radial-gradient(rgb(248, 191, 141),rgb(233, 185, 144) );
 }
