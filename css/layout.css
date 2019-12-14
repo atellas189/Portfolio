@@ -15,70 +15,174 @@
 @media only screen and (max-width: 767px) {
     html{
     background-color: blue;
+    color: white;
+    }
+    body{
+        margin-top: -28px;
     }
     .logo{
-        width: 10px;
-        height: 10px;
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+    }
+    .combine{
+        display: flex;
+        background-color: black;
+        width: 100%;
+        margin-top: 20px;
+    }
+    header{
+        display: flex;
+        width: 50%;
+        left: -200px
+    }
+    header h1{
+        text-align: right;
+    }
+    header img{
+        width: 40px;
+        height: 40px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+    nav img{
+        width: 50px;
+        height: 50px;
+        padding-top: 15px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50%, 50%;
+        grid-gap: 10px;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     html{
-        background-color: skyblue;
-        margin-left: 75px;
-        margin-right: 75px;
+        background-image: url(../Images/ocean.jpg);
+        background-size: cover;
+        color: white;
     }
-    .ocean{ 
-        height: 5%;
-        width:100%;
-        position:absolute;
-        bottom:0;
-        left:0;
-        background:rgb(1, 88, 113);
-        top: 1205px;
-      }
-      .ocean-2{ 
-        height: 5%;
-        width:100%;
-        position:absolute;
-        bottom:0;
-        left:0;
-        background:rgb(1, 88, 113);
-        top: 1575px;
-      }
-    .wave{
-        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg);
-        background-repeat: repeat-x; 
-        position: absolute;
-        top: -198px;
-        width: 3400px;
-        height: 198px;
-        animation: wave 7.5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-        animation-timing-function: linear;
-        transform: translate3d(0, 0, 0);
+    body{
+        font-family: 'Light';
     }
-    @keyframes wave {
-        0% {margin-left: 0;}
-        
-        100% {margin-left: -1600px;}
+    .logo{
+        opacity: 0;
+        width: 1px;
+        height: 1px;
     }
-
-    .wave:nth-of-type(2) {
-        top: -170px;
+    header { 
+        position: relative; 
+        text-align: center;
+        font-family: 'Bold';
+        font-size: 150%;
+        text-transform: uppercase; 
+        letter-spacing: 4px; 
+        background: linear-gradient(90deg, yellow, orange, yellow); 
+        background-repeat: no-repeat; 
+        background-size: 80%; 
+        animation: animate 5s linear infinite; 
+        -webkit-background-clip: text; 
+        background-clip: text; 
+        -webkit-text-fill-color: rgba(255, 255, 255, 0); 
+      }     
+      @keyframes animate { 
+        0%   { background-position: -500%;} 
+        100% { background-position: 500%;} 
+      } 
+    h1{
+        font-family: 'Bold';
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav img{
+        width: 150px;
+        height: 150px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 33% 33% 33%;
+        grid-gap: 10px;
+        font-size: 125%;
+    }
+    p, h1{
+        padding-left: 8px;
         opacity: 1;
-        animation: splash 7s ease -1.30s infinite;
     }
-    @keyframes splash {
-        0%, 100% {transform: translate3d(0,-25px,0);}
-        
-        50% {transform: translate3d(0,5px,0);}
+    .main{
+        border: black 4px solid;
+        background-color: #24AAE2;
+        height: 92%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .aside{
+        border: black 4px solid;
+        background-color: rgb(34, 154, 206);
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        opacity: .1;
+    }
+    
+    .aside h1{
+        text-align: center;
+    }
+    .aside h1{
+        text-align: center;
+    }
+    .fade{
+        opacity: 1;
+    }
+    .aside img{
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item-1{
+        border: black 4px solid;
+        background-color: #1399C6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .item-1 h1{
+        text-decoration: underline;
+        text-align: center;
+    }
+    .item-2{
+        border: black 4px solid;
+        background-color: #1399C6;
+        grid-column: 2 / 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .item-2 h1{
+        text-decoration: underline;
+        text-align: center;
+    }
+    .item-2 img{
+        height: 100%;
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
-    img{
-        width: 50px;
-        height: 50px;
-    }
 
 
 
@@ -179,6 +283,9 @@
     .aside img{
         width: 300px;
         height: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     .item-1{
         border: black 4px solid;
@@ -205,6 +312,7 @@
     }
     .item-2 img{
         height: 100%;
+        width: 90%;
         display: block;
         margin-left: auto;
         margin-right: auto;

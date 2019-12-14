@@ -16,6 +16,9 @@ body:hover{
     background-position-x: 1000px;
     transition: 20s;
 }
+a{
+    color: white;
+}
 .coding{
     position: relative;
     background-image: url('../Images/fishy.png');
@@ -32,7 +35,6 @@ body:hover{
 }
 .coding h1{
     font-size: 250%;
-    text-shadow: 4px 4px 0px blue;
     text-align: center;
     position: absolute;
     top: 24%;
@@ -62,7 +64,6 @@ body:hover{
     left: 34%;
     margin-right: -50%;
     font-family: 'Normal';
-    text-shadow: 4px 4px 0px blue;
 }
 .home{
     top: -100px;
